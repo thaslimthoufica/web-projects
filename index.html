@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadai Detective Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vadai Detective Game 🕵️‍♂️</h1>
+        <p>Guess the 3-digit number! Here are the clues:</p>
+        <ul>
+            <li><strong>Sambar</strong>: One digit is correct and in the right position.</li>
+            <li><strong>Pongal</strong>: One digit is correct but in the wrong position.</li>
+            <li><strong>Vadai</strong>: No digit is correct.</li>
+        </ul>
+        <p id="example">If the secrectnumber was '213' and you guessed '421' the clue would be 'pongal pongal'</p>
+        
+        <div id="game-area">
+            <p id="message">I'm thinking of a number... </p>
+            <input type="text" id="guess-input" placeholder="Enter your guess" maxlength="3">
+            <button id="submit-btn">Submit Guess</button>
+            <button id="restart-btn" style="display: none;">Play Again</button>
+        </div>
+        
+        <div id="clues-area">
+            <h3>Clues:</h3>
+            <ul id="clues-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer><center>Developed by Thaslim Thoufica</center></footer>
+</body>
+</html>
